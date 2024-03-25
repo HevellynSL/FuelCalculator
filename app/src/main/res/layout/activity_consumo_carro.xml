@@ -59,6 +59,7 @@
         android:layout_margin="46dp"
         android:background="@drawable/rouded_bg"
         android:hint="Ex: 5.5"
+        android:inputType="numberDecimal"
         android:maxLength="4"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
