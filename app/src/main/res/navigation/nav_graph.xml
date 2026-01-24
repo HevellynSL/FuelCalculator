@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_Inicio">
+    <fragment
+        android:id="@+id/fragment_Inicio"
+        android:name="com.example.fuelcalculator.Fragment_Inicio"
+        android:label="Fragment_Inicio"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_fragment_Inicio_to_precoCombustivel"
+            app:destination="@id/precoCombustivel" />
+    </fragment>
+    <fragment
+        android:id="@+id/precoCombustivel"
+        android:name="com.example.fuelcalculator.PrecoCombustivel"
+        android:label="fragment_preco_combustivel"
+        tools:layout="@layout/fragment_preco_combustivel" >
+        <action
+            android:id="@+id/action_precoCombustivel_to_consumoCarro"
+            app:destination="@id/consumoCarro" />
+    </fragment>
+    <fragment
+        android:id="@+id/consumoCarro"
+        android:name="com.example.fuelcalculator.ConsumoCarro"
+        android:label="fragment_consumo"
+        tools:layout="@layout/fragment_consumo" >
+        <action
+            android:id="@+id/action_consumoCarro_to_distancia_destino"
+            app:destination="@id/distancia_destino" />
+    </fragment>
+    <fragment
+        android:id="@+id/distancia_destino"
+        android:name="com.example.fuelcalculator.Distancia_destino"
+        android:label="fragment_distancia"
+        tools:layout="@layout/fragment_distancia" >
+        <action
+            android:id="@+id/action_distancia_destino_to_fragment_Resultado"
+            app:destination="@id/fragment_Resultado" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Resultado"
+        android:name="com.example.fuelcalculator.Fragment_Resultado"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+        <action
+            android:id="@+id/action_fragment_Resultado_to_fragment_Inicio"
+            app:destination="@id/fragment_Inicio" />
+    </fragment>
+</navigation>

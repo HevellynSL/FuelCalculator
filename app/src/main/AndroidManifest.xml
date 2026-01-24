@@ -12,18 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FuelCalculator"
         tools:targetApi="31">
-        <activity
-            android:name=".Resultado"
-            android:exported="false" />
-        <activity
-            android:name=".Distancia_destino"
-            android:exported="false" />
-        <activity
-            android:name=".ConsumoCarro"
-            android:exported="false" />
-        <activity
-            android:name=".PrecoCombustivel"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

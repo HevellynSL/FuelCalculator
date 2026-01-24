@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Rosabb"
-    tools:context=".Resultado">
+    tools:context=".Fragment_Resultado">
 
 
 
@@ -125,7 +125,7 @@
         android:layout_margin="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/gradient_button"
-        android:text="Novo Cálculo"
+        android:text="@string/botao_novo_calculo"
         android:textColor="@color/white"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"

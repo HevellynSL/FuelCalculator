@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FuelCalculator</string>
+    <string name="botao_inicio">Calcular</string>
+    <string name="botao_proximo">Próximo</string>
+    <string name="botao_novo_calculo">Novo cálculo</string>
 </resources>
